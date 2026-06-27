@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stephen Khan-Evans | Professional IT Consultant</title>
+<meta name="description" content="Stephen Khan-Evans is an IT consultant based in Wellington, New Zealand, specialising in tech infrastructure, business systems analysis and full SDLC delivery, with clients across Wellington, NZ and London, UK since 1990.">
+<link rel="canonical" href="https://khan-evans.net/">
+<meta property="og:title" content="Stephen Khan-Evans | Professional IT Consultant">
+<meta property="og:description" content="Tech infrastructure consulting in Wellington, New Zealand, with clients across NZ and the UK since 1990.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://khan-evans.net/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23101F2E'/%3E%3Ccircle cx='9' cy='22' r='2.6' fill='%23E08D3C'/%3E%3Ccircle cx='23' cy='10' r='2.6' fill='%23E08D3C'/%3E%3Cpath d='M9 22 23 10' stroke='%23E08D3C' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Stephen Khan-Evans",
+  "jobTitle": "IT Consultant",
+  "url": "https://khan-evans.net/",
+  "email": "mailto:skhanevans@gmail.com",
+  "telephone": "+64210355571",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Wellington",
+    "addressCountry": "NZ"
+  },
+  "knowsAbout": ["Business systems analysis", "Software development lifecycle", "Tech infrastructure", "IT support"]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #EEF2F6;
+    --panel: #FFFFFF;
+    --ink: #101F2E;
+    --ink-soft: #1B2A3C;
+    --text: #1B2430;
+    --text-muted: #5B6776;
+    --accent: #E08D3C;
+    --teal: #2F7E78;
+    --line: #D9E0E8;
+    --radius: 10px;
+    --max: 880px;
+    --display: "Space Grotesk", system-ui, sans-serif;
+    --body: "IBM Plex Sans", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--body);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+
+  a { color: var(--teal); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: var(--accent);
+    color: var(--ink);
+    padding: 0.5em 1em;
+    z-index: 100;
+  }
+  .skip-link:focus {
+    left: 1em;
+    top: 1em;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal);
+  }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Header */
+  header.site {
+    background: var(--ink);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .nav {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+  }
+  .nav .logo {
+    font-family: var(--display);
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+  }
+  .nav ul {
+    display: flex;
+    gap: 1.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav a {
+    color: #CFE0E8;
+    font-family: var(--body);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .nav a:hover { color: var(--accent); text-decoration: none; }
+
+  /* Hero */
+  .hero {
+    background: var(--ink);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 0 6rem;
+  }
+  .hero .wrap { position: relative; z-index: 2; }
+  .hero-graphic {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    height: 100%;
+    width: 420px;
+    opacity: 0.55;
+    z-index: 1;
+  }
+  @media (max-width: 720px) {
+    .hero-graphic { display: none; }
+  }
+  .hero h1 {
+    font-family: var(--display);
+    font-size: clamp(2.1rem, 5vw, 3.4rem);
+    line-height: 1.08;
+    margin: 0.6rem 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+  .hero .role {
+    font-size: 1.15rem;
+    color: #CFE0E8;
+    margin: 0 0 2rem;
+  }
+  .btn {
+    display: inline-block;
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.75em 1.5em;
+    border-radius: var(--radius);
+    background: var(--accent);
+    color: var(--ink);
+    border: none;
+  }
+  .btn:hover { background: #ec9d54; text-decoration: none; }
+  .btn-ghost {
+    background: transparent;
+    border: 1.5px solid #3A4B5E;
+    color: #fff;
+  }
+  .btn-ghost:hover { border-color: var(--accent); background: transparent; color: var(--accent); }
+
+  /* divider node motif */
+  .node-divider {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+  }
+
+  section { padding: 4.5rem 0; }
+  section h2 {
+    font-family: var(--display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin: 0.3rem 0 1.2rem;
+  }
+
+  /* About */
+  #about .bio {
+    max-width: 640px;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+  }
+  #about .bio p { margin-top: 0; }
+
+  /* Services */
+  #services { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .tagline { color: var(--text-muted); margin-top: -0.6rem; margin-bottom: 2.5rem; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+  @media (max-width: 720px) {
+    .services-grid { grid-template-columns: 1fr; }
+  }
+  .service-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.6rem 1.4rem;
+    background: var(--bg);
+  }
+  .service-card svg { width: 34px; height: 34px; margin-bottom: 0.9rem; }
+  .service-card h3 {
+    font-family: var(--display);
+    font-size: 1.05rem;
+    margin: 0 0 0.3rem;
+    letter-spacing: 0.01em;
+  }
+  .service-card p { color: var(--text-muted); margin: 0; font-size: 0.95rem; }
+
+  /* Contact */
+  #contact .grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem 3rem;
+    margin-top: 1.5rem;
+  }
+  @media (max-width: 600px) {
+    #contact .grid { grid-template-columns: 1fr; }
+  }
+  #contact .item .label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--teal);
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  #contact .item .value {
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  footer {
+    background: var(--ink);
+    color: #8FA3B5;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site">
+  <nav class="nav" aria-label="Primary">
+    <span class="logo">KHAN-EVANS.NET</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <svg class="hero-graphic" viewBox="0 0 420 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g stroke="#E08D3C" stroke-width="1.4" fill="none">
+        <line x1="60" y1="420" x2="220" y2="300" />
+        <line x1="220" y1="300" x2="180" y2="140" />
+        <line x1="220" y1="300" x2="360" y2="220" />
+        <line x1="180" y1="140" x2="320" y2="60" />
+      </g>
+      <g fill="#E08D3C">
+        <circle cx="60" cy="420" r="5" />
+        <circle cx="220" cy="300" r="6" />
+        <circle cx="180" cy="140" r="5" />
+        <circle cx="360" cy="220" r="5" />
+        <circle cx="320" cy="60" r="5" />
+      </g>
+    </svg>
+    <div class="wrap">
+      <p class="eyebrow">Wellington, New Zealand</p>
+      <h1>Stephen Khan-Evans</h1>
+      <p class="role">Professional IT Consultant</p>
+      <a class="btn" href="#contact">Get in touch</a>
+      <a class="btn btn-ghost" href="#services" style="margin-left:0.75rem;">View services</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow">Bio</p>
+      <h2>A strategic, hands-on approach to IT infrastructure</h2>
+      <div class="bio">
+        <p>Since 1990, I've been providing professional consulting services to clients in London, UK and Wellington, NZ. Specialising in tech infrastructure solutions, my focus is always on building an efficient and results-driven relationship.</p>
+        <p>I'll work with you to clarify your needs and create a customised solution. Get in touch to learn more about my consulting approach.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h2>Your Strategic Partner</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#2F7E78" stroke-width="2" aria-hidden="true">
+            <rect x="4" y="6" width="12" height="9" rx="1.5"/>
+            <rect x="24" y="6" width="12" height="9" rx="1.5"/>
+            <rect x="14" y="25" width="12" height="9" rx="1.5"/>
+            <path d="M10 15v5a3 3 0 0 0 3 3h0M30 15v5a3 3 0 0 1-3 3h0"/>
+          </svg>
+          <h3>Business System Analysis</h3>
+          <p>The path to success</p>
+        </div>
+
+        <div class="service-card">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#2F7E78" stroke-width="2" aria-hidden="true">
+            <circle cx="20" cy="20" r="14"/>
+            <path d="M20 8a12 12 0 0 1 11.3 8" />
+            <path d="M28 14l4-2 1 4.4"/>
+            <circle cx="20" cy="20" r="2.4" fill="#2F7E78" stroke="none"/>
+          </svg>
+          <h3>Full SDLC</h3>
+          <p>A comprehensive approach</p>
+        </div>
+
+        <div class="service-card">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#2F7E78" stroke-width="2" aria-hidden="true">
+            <path d="M8 22v-4a12 12 0 0 1 24 0v4"/>
+            <rect x="5" y="22" width="7" height="10" rx="2"/>
+            <rect x="28" y="22" width="7" height="10" rx="2"/>
+            <path d="M12 32h6a3 3 0 0 0 3-3v-1"/>
+          </svg>
+          <h3>Tech Support</h3>
+          <p>Expert guidance</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h2>Contact Me</h2>
+      <div class="grid">
+        <div class="item">
+          <span class="label">Location</span>
+          <span class="value">Wellington, New Zealand</span>
+        </div>
+        <div class="item">
+          <span class="label">Email</span>
+          <span class="value"><a href="mailto:skhanevans@gmail.com">skhanevans@gmail.com</a></span>
+        </div>
+        <div class="item">
+          <span class="label">Phone</span>
+          <span class="value"><a href="tel:+64210355571">+64 21 0355571</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Stephen Khan-Evans
+</footer>
+
+</body>
+</html>
